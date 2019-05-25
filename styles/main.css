@@ -53,12 +53,12 @@
 /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
 
 body {
-    background: rgb(57, 141, 126);
+    background: rgb(205, 255, 246);
     font-family: main-font;
     margin: 0px;
 }
 #head-div {
-  background: #00a4aa;
-  margin: 0px;
+  background: #7cc9f5;
+  padding-top: 10px;
   height: 50px;
 }
