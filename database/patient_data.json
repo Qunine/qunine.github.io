@@ -1,0 +1,32 @@
+{
+    "Jane Patient": {
+        "name": [
+            "jane",
+            "patient"
+        ],
+        "password":"password",
+        "records": [
+            {
+                "name": "CAT Scan",
+                "type": "binary",
+                "comments": "Seems to be stuck inside the body of a feline",
+                "link": "https://upload.wikimedia.org/wikipedia/commons/6/66/An_up-close_picture_of_a_curious_male_domestic_shorthair_tabby_cat.jpg",
+                "sha256": "QcrTNEh0D5qWv8O5ERsVasWtA6uol62uGJE+LEDJqzk="
+            },
+            {
+                "name": "Blood type",
+                "type": "text",
+                "comments": "Appears to be made of coffee.",
+                "link": "https://pastebin.com/raw/HU9veha6",
+                "sha256": "08a51ede637fb08ada1ad3bf0399531708f192a6d6fe2fd7d3bc27444455b0f2"
+            },
+            {
+                "name": "X-Ray",
+                "type": "binary",
+                "comments": "Seems to be a loaded revolver stuck in patient's anus",
+                "link": "https://img.buzzfeed.com/buzzfeed-static/static/2015-09/18/15/enhanced/webdr11/enhanced-2642-1442602857-1.jpg?downsize=800:*&output-format=auto&output-quality=auto",
+                "sha256":"7Y+NTPaMy/j8Ap3L1xKIj58+IWU2tCyIT071kPJAUKE="
+            }
+        ]
+    }
+}
