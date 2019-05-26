@@ -114,10 +114,6 @@ html {
   padding-top: 102px;
 }
 
-#grad {
-  background: linear-gradient(to bottom, #f05a4f, #5ceca2);
-}
-
 columnheading{
   text-align: center;
   float:center;
