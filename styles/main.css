@@ -15,10 +15,6 @@
     margin-bottom: 20px;
 }
 
-.info {
-    
-}
-
 .logo {
   width: 32px;
   height: 32px;
@@ -78,13 +74,11 @@
 body {
     /*background: rgb(205, 255, 246);*/
     background-image: linear-gradient(rgb(143, 206, 194),rgb(205, 255, 246));
+    height: 100%;
     font-family: main-font;
     margin: 0px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-html {
-  background: rgb(205, 255, 246);
 }
 #head-div {
   /*background: #7cc9f5;*/
