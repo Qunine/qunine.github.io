@@ -132,3 +132,8 @@ column {
     width: 100%;
   }
 }
+
+.infobox {
+  border: rgb(129, 185, 175) 3px solid;
+  border-radius: 10%;
+}
