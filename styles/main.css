@@ -148,3 +148,6 @@ columnheading img {
   width: 128px;
   display: block;
 }
+.file:hover {
+  background-color: rgb(140, 202, 192);
+}
