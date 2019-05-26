@@ -130,10 +130,11 @@
     </style>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
-
+<div id='grad'>
 <body>
-    <div id='head-div'>
-        <h2 class='header'><img src='images/logo.png' class='logo'>qUNIne <span style="opacity:0;">cantseemelol______________________________________</span>The Universal Medical Database</h2>
+    <div height='100px'><br><br><br><br><br><br></div>
+    <div id='head-div' class='header' style='width: 100%'>
+        <h2 class='header'><img src='images/logo.png' class='logo'>qUNIne <span style="opacity:0;">cantseemelol_____________________________</span>The Universal Medical Database</h2>
         <div class="dropdown" style="float:right;">
             <button class="dropbtn">Login</button>
             <div class="dropdown-content">
@@ -148,7 +149,7 @@
     <form class="modal-content animate">
         <div class="imgcontainer">
         <span onclick="document.getElementById('patient-login').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img width='188px' height='128px' src="images/patient.png" alt="Avatar" class="avatar">
+        <img width='220px' height='220px' src="images/patient.png" alt="Avatar" class="avatar">
         </div>
         <h3 style="text-align: center;">Patient Login</h3>
 
@@ -177,7 +178,7 @@
         
         <div class="imgcontainer">
         <span onclick="document.getElementById('doctor-login').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img width="128px" height="188px" src="images/doctor.png" alt="Avatar" class="avatar">
+        <img width="220px" height="220px" src="images/doctor.png" alt="Avatar" class="avatar">
         </div>
         <h3 style="text-align: center;">Doctor Login</h3>
 
@@ -200,15 +201,18 @@
         </div>
     </form>
     </div>
+    </body>
+    
+    <img id='corners' width="300px" height="300px" src="images/logo.png" alt="Logo" class="center">
     <columnheading>
         <h1>Our Mission</h1>
         <link rel="stylesheet" type="text/css" href="styles/main.css">
     </columnheading>
-    
     <column>
-        <h1 id='grad'>qUNIne is a non-profit organization who wishes to make patient data simpler to access for both doctors
+        <h1>qUNIne is a non-profit organization who wishes to make patient data simpler to access for both doctors
             and patients. We imagine an age in which every patient can access their data in a simple, yet secure manner; an age in which 
-        every doctor can give their patients important information in a quick and hassle-free manner. </h1>
+        every doctor can give their patients important information in a quick and hassle-free manner. <br> <br> 
+        </h1>
 
         <link rel="stylesheet" type="text/css" href="styles/main.css">
     </column>
@@ -218,12 +222,12 @@
     </columnheading>
     
     <column>
-        <h1 id='grad'>qUNIne is based on a secure database system, encrypted using government-standard RSA encryption. 
+        <h1>qUNIne is based on a secure database system, encrypted using government-standard RSA encryption. 
             Hospitals can access their patients' data, but only that which relates to that hospital. 
             Patients can view every document relevant to them in a simple one-page system, 
             and every file is retrieved from the hospital database using secure POST requests.
             Due to this distributed architecture, the qUNIne System is extremely difficult to penetrate, a feat which would
-            require a cyber-criminal to penetrate thousands of hospitals, as opposed to a single server.
+            require a cyber-criminal to penetrate thousands of hospitals, as opposed to a single server.  <br> <br> 
         </h1>
     
         <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -234,10 +238,10 @@
     </columnheading>
     
     <column>
-        <h1 id='grad'>qUNIne can provide superior functionality to similar services such as MyChart, as it allows the patient to 
+        <h1>qUNIne can provide superior functionality to similar services such as MyChart, as it allows the patient to 
             consolidate their medical records in a single location as opposed to multiple separated sub-groups.
             Its simple design removes the need for extensive and costly tech support departments, as the system is extremely easy
-            to use and explain.
+            to use and explain.  <br> <br> 
         </h1>
     
         <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -286,7 +290,21 @@
             }
             
         }
-    </script>
-</body>
+        /*
+        window.onscroll = function() {myFunction()};
 
+        var header = document.getElementById("head-div");
+
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+             } else {
+                header.classList.remove("sticky");
+            }
+        }*/
+
+    </script>
+</div>
 </html>
