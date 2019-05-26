@@ -43,14 +43,15 @@
 
 .dropdown {
   display: inline-block;
-  position: relative;
+  position: fixed;
+  right: 0;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   right: 0;
-  background-color: #f1f1f1;
+  background-color: #4CAF50;
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -75,6 +76,8 @@ body {
     background: rgb(205, 255, 246);
     font-family: main-font;
     margin: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #head-div {
   background: #7cc9f5;
@@ -82,10 +85,35 @@ body {
   height: 50px;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#corners {
+  border-radius: 15px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+#grad {
+  background: linear-gradient(to bottom, #f05a4f, #5ceca2);
+}
+
 columnheading{
   text-align: center;
   float:center;
   font-size: 15px;
+  font-weight: bold;
 }
 
 column {
@@ -104,7 +132,4 @@ column {
   column {
     width: 100%;
   }
-}
-.file {
-  background-color: #e3f5ff;
 }
