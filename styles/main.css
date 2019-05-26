@@ -4,24 +4,41 @@
 }
 
 .header {
-    padding: 20px;
+    padding: 0px;
+    padding-left: 20px;
+    position: fixed;
+    top: 0px;
     text-align: left;
     vertical-align: center;
     font-family: main-font;
-    display: inline;
+    /*display: inline;*/
+    margin-bottom: 20px;
 }
 
 .info {
     
 }
 
+.logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+  border-radius: 20%;
+}
+
+
 .dropbtn {
   background-color: rgb(57, 141, 126);
   color: #ffffff;
   padding: 16px;
+  padding-bottom: 14px;
   font-size: 16px;
   border: none;
-  display: inline;
+  position: relative;
+  margin: 0px;
+  margin-top: 0px;
+  
+
 }
 
 .dropdown {
@@ -37,13 +54,15 @@
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin: 0px;
 }
 
-.dropdown-content a {
+.dropdown-content button {
   color: black;
   text-decoration: none;
   display: block;
   padding: 10px;
+  margin: 0px;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
@@ -61,4 +80,31 @@ body {
   background: #7cc9f5;
   padding-top: 10px;
   height: 50px;
+}
+
+columnheading{
+  text-align: center;
+  float:center;
+  font-size: 15px;
+}
+
+column {
+  text-align: center;
+  float: center;
+  font-size: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  column {
+    width: 100%;
+  }
+}
+.file {
+  background-color: #e3f5ff;
 }

@@ -1,0 +1,64 @@
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>qUNIne Doctor - The Universal Medical Database</title>
+    <style>
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+    <div id='head-div'>
+        <h2 class='header'>qUNIne <span style="opacity:0;">cantseemelol___________________________</span>The Universal
+            Medical Database - Doctor Site</h2>
+    </div>
+
+</body>
+
+</html>
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>qUNIne Patient - The Universal Medical Database</title>
+    <style>
+        .file {
+            border: lightgrey 2px solid;
+            margin: 5px;
+            border-radius: 5%;
+            padding: 10px;
+            
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id='head-div' class='header' style="width: 100%">
+        <h2 class='header'><img src='images/logo.png' class='logo'>qUNIne <span style="opacity:0;">cantseemelol___________________________</span>The Universal
+            Medical Database - Patient Site</h2>
+    </div>
+
+    <div id='files'>
+
+    </div>
+    <script>
+        var random = Math.random;
+        var fList = document.getElementById('files');
+        var docnames1 = ['Jim', 'Hrolf', 'Kanishq', 'Lils', 'Isaac', 'Manosi', 'Xorien', 'Ems', 'Ebonie', 'Marwane', 'Madeleine', 'Holmger', 'Bjerte', 'Klint', 'Arturo', 'Dieterich', 'Darin', 'Hung', 'Asber', 'Rådorm', 'Huldrik', 'Jule', 'Gunløgh', 'Oscar', 'Edwin', 'Martina', 'Zellmer', 'Wilburn', 'Evie', 'Emerson', 'Gunther', 'Alois', 'Asgut', 'Nail', 'Roxane', 'Théo', 'Maaike', 'Ewen', 'Jordi', 'Shaun', 'Fabian', 'Daley', 'Emilio', 'Georgeanna', 'Jelte', 'Teodora', 'Øybrand', 'Jörg', 'Georgina', 'Latrina', 'Gunnløg', 'Reza', 'Jaylen', 'Emilie', 'Maina', 'Jewell', 'Juliana', 'Wendy', 'Ozie', 'Tycho', 'Weldon', 'Ketilløgh', 'Sean', 'Haldor', 'Yiğit', 'Rani', 'Jarno', 'Aleksey', 'William', 'Vivill', 'Tona', 'Annika', 'Chayenne', 'Tyr', 'Mardi', 'Guthrie', 'Yassin', 'Shae', 'Kort', 'Natalie', 'Ewan', 'Tholf', 'Luna', 'Johanna', 'Stéphanie', 'Åsta', 'Sarah', 'Thorgunn', 'Rico', 'Alwin', 'Azur', 'Hildigard', 'Thrugun', 'Mert', 'Noah', 'Eya', 'Ryad', 'Damian', 'Lalie', 'Caroline', 'Alice', 'Emmy', 'Mahe', 'Russell', 'Gabin', 'Issa', 'Åni', 'Adil'];
+        var docnames2 = ['Hegna', 'Wu', 'Kamas', 'Kapran', 'Arthur', 'Knish', 'Mechanos', 'Everett', 'Léger', 'ten', 'Kornum', 'Volden', 'Beyer', 'Pate', 'Hausler', "O'donnell", 'Ewing', 'Eggen', 'Aulie', 'Winkler', 'Behrends', 'Ejlersen', 'Hall', 'Glenn', 'Garb', 'Blau', 'Bryant', 'Gerbeldinck', 'Reynolds', 'Bocker', 'Gerig', 'Halvorsen', 'Navarro', 'Massicotte', 'St-Martin', 'Thies', 'Bourguignon', 'Haveste', 'Blankenship', 'Klandermans', 'Bocken', 'Hooper', 'Wall', 'Broijls', 'Todd', 'Moen', 'Hasek', 'Sunde', 'Castro', 'Høegh', 'Graver', 'ter', 'Sikking', 'Loyer', 'Hansen', 'Ploug', 'Bovelink', 'Wiggins', 'Goorkes', 'Hester', 'Kjer', 'Poole', 'Hagen', 'Brunijnck', 'Bak', 'Fortuyn', 'Iversen', 'Gottlieb', 'Helgemo', 'Odom', 'Lausen', 'Overweg', 'Skoglund', 'Jolin', 'Hochberg', 'van', 'Spence', 'Thomsen', 'Houk', 'Myklebust', 'Devold', 'Vivier', 'Gerst', 'Roinestad', 'Strand', 'Gierkinck', 'Smedegaard', 'Graf', 'Behrends', 'Kyed', 'Wollesen', 'Bech', 'Heeren', 'Hamon', 'Raffin', 'Salmon', 'Fletcher', 'Lafont', 'Goebel', 'van', 'Franke', 'Bérubé', 'Chavez', 'Théberge', 'Brun', 'Jansson', 'Giasson'];
+        for (var i=0;i<random()*30+15;i++) {
+            var elem = document.createElement('div');
+            elem.innerHTML = docnames1[parseInt(random() * (docnames1.length - 1))] + ' ' + docnames2[parseInt(random() * (docnames2.length - 1))];
+            elem.className = 'file';
+            fList.appendChild(elem);
+        }
+    </script>
+</body>
+
+</html>

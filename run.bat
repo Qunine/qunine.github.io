@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files file:\\C:\Users\Matteo\Documents\GitHub\qunine.github.io\qunine.github.io\qunine.github.io\index.html

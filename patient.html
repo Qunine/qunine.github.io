@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>qUNIne Patient - The Universal Medical Database</title>
+    <style>
+        .file {
+            border: lightgrey 2px solid;
+            margin: 5px;
+            border-radius: 5%;
+            padding: 10px;
+            
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id='head-div' class='header' style="width: 100%">
+        <h2 class='header'><img src='images/logo.png' class='logo'>qUNIne <span style="opacity:0;">cantseemelol___________________________</span>The Universal
+            Medical Database - Patient Site</h2>
+    </div>
+
+    <div id='files'>
+
+    </div>
+    <script>
+        var random = Math.random;
+        var fList = document.getElementById('files');
+        var doctypes = ['X-Ray','Electrocephalogram','CAT Scan','Checkup Results','Endoscopy','Thyroid Cancer Detection','Rotary Blade Insertion', 'Appendectomy', 'Dextrestopy'];
+        var docnames1 = ['Jim','Hrolf','Kanishq','Lils','Isaac','Manosi','Xorien', 'Ems','Ebonie', 'Marwane', 'Madeleine', 'Holmger', 'Bjerte', 'Klint', 'Arturo', 'Dieterich', 'Darin', 'Hung', 'Asber', 'Rådorm', 'Huldrik', 'Jule', 'Gunløgh', 'Oscar', 'Edwin', 'Martina', 'Zellmer', 'Wilburn', 'Evie', 'Emerson', 'Gunther', 'Alois', 'Asgut', 'Nail', 'Roxane', 'Théo', 'Maaike', 'Ewen', 'Jordi', 'Shaun', 'Fabian', 'Daley', 'Emilio', 'Georgeanna', 'Jelte', 'Teodora', 'Øybrand', 'Jörg', 'Georgina', 'Latrina', 'Gunnløg', 'Reza', 'Jaylen', 'Emilie', 'Maina', 'Jewell', 'Juliana', 'Wendy', 'Ozie', 'Tycho', 'Weldon', 'Ketilløgh', 'Sean', 'Haldor', 'Yiğit', 'Rani', 'Jarno', 'Aleksey', 'William', 'Vivill', 'Tona', 'Annika', 'Chayenne', 'Tyr', 'Mardi', 'Guthrie', 'Yassin', 'Shae', 'Kort', 'Natalie', 'Ewan', 'Tholf', 'Luna', 'Johanna', 'Stéphanie', 'Åsta', 'Sarah', 'Thorgunn', 'Rico', 'Alwin', 'Azur', 'Hildigard', 'Thrugun', 'Mert', 'Noah', 'Eya', 'Ryad', 'Damian', 'Lalie', 'Caroline', 'Alice', 'Emmy', 'Mahe', 'Russell', 'Gabin', 'Issa', 'Åni', 'Adil'];
+        var docnames2 = ['Hegna','Wu','Kamas','Kapran','Arthur','Knish','Mechanos', 'Everett', 'Léger', 'ten', 'Kornum', 'Volden', 'Beyer', 'Pate', 'Hausler', "O'donnell", 'Ewing', 'Eggen', 'Aulie', 'Winkler', 'Behrends', 'Ejlersen', 'Hall', 'Glenn', 'Garb', 'Blau', 'Bryant', 'Gerbeldinck', 'Reynolds', 'Bocker', 'Gerig', 'Halvorsen', 'Navarro', 'Massicotte', 'St-Martin', 'Thies', 'Bourguignon', 'Haveste', 'Blankenship', 'Klandermans', 'Bocken', 'Hooper', 'Wall', 'Broijls', 'Todd', 'Moen', 'Hasek', 'Sunde', 'Castro', 'Høegh', 'Graver', 'ter', 'Sikking', 'Loyer', 'Hansen', 'Ploug', 'Bovelink', 'Wiggins', 'Goorkes', 'Hester', 'Kjer', 'Poole', 'Hagen', 'Brunijnck', 'Bak', 'Fortuyn', 'Iversen', 'Gottlieb', 'Helgemo', 'Odom', 'Lausen', 'Overweg', 'Skoglund', 'Jolin', 'Hochberg', 'van', 'Spence', 'Thomsen', 'Houk', 'Myklebust', 'Devold', 'Vivier', 'Gerst', 'Roinestad', 'Strand', 'Gierkinck', 'Smedegaard', 'Graf', 'Behrends', 'Kyed', 'Wollesen', 'Bech', 'Heeren', 'Hamon', 'Raffin', 'Salmon', 'Fletcher', 'Lafont', 'Goebel', 'van', 'Franke', 'Bérubé', 'Chavez', 'Théberge', 'Brun', 'Jansson', 'Giasson'];
+        var imgs = [
+            'https://cdn1.medicalnewstoday.com/content/images/hero/320/320627/320627_1100.jpg',
+            'http://ipepweb.org/wp-content/uploads/2017/12/pediatric-surgery.jpg',
+            'https://d33ljpvc0tflz5.cloudfront.net/dims3/MMH/thumbnail/325x226/quality/75/?url=https%3A%2F%2Fd26ua9paks4zq.cloudfront.net%2F9e%2F1e%2F5fd4bb854bbc93890bc941677850%2Fresizes%2F500%2Fimage-getty-493216385.jpg',
+            'https://www.olympus-europa.com/medical/rmt/media/Content/Content-MSD/Images/MSP-Pages/MSP-GS/MSP_GS_Hepato-Pancreato-Biliary-Surgery_Procedure_20172808_ProductHero_320.jpg',
+            'https://cbsnews3.cbsistatic.com/hub/i/r/2015/10/26/d00e9983-9077-4567-bb93-40d728474934/thumbnail/620x413/86bad84176ba5cf161560cafed27e848/istock000018168863medium.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwVzwht0iHinTeNkf7TVRfiQMPpxk9nc4N7WYKp4GbRdPthPsi8Q',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3VSPb8sVnUm6Gba2OB6slZmm_ewXd-sZyPGVPvIy_sKBvFwL9pw'
+        ];
+        for (var i=0;i<random()*30+15;i++) {
+            var elem = document.createElement('div');
+            var img = document.createElement('img');
+            img.src = imgs[parseInt(random() * (imgs.length))];
+            img.width = 32;
+            img.height = 32;
+            img.style = 'border-radius:50%';
+            elem.appendChild(img);
+            var txt = document.createElement('span');
+            txt.style = 'padding:10px';
+            txt.innerHTML = doctypes[parseInt(random()* (doctypes.length))] + ' - ' + parseInt(random()*12+1) + '/' + parseInt(random()*28+1) + '/' + parseInt(random()*60+1980) + ' - Last Accessed by Dr. ' + docnames1[parseInt(random() * (docnames1.length - 1))] + ' ' + docnames2[parseInt(random() * (docnames2.length - 1))];
+            elem.appendChild(txt);
+            elem.className = 'file';
+            fList.appendChild(elem);
+        }
+    </script>
+</body>
+
+</html>

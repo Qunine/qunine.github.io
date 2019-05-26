@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>qUNIne - The Universal Medical Database</title>
+    <link rel="icon" href="favicon.ico">
     <style>
         body {font-family: Arial, Helvetica, sans-serif;}
 
@@ -18,7 +19,7 @@
         }
 
         /* Set a style for all buttons */
-        button {
+        .submit, button {
         background-color: #4CAF50;
         color: white;
         padding: 14px 20px;
@@ -26,9 +27,10 @@
         border: none;
         cursor: pointer;
         width: 100%;
+        text-decoration: none;
         }
 
-        button:hover {
+        .submit:hover, button:hover {
         opacity: 0.8;
         }
 
@@ -47,8 +49,8 @@
         }
 
         img.avatar {
-        width: 40%;
-        border-radius: 50%;
+        /*width: 40%;*/
+        border-radius: 15%;
         }
 
         .container {
@@ -69,10 +71,10 @@
         top: 0;
         width: 100%; /* Full width */
         height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
+        overflow: hidden; /* Enable scroll if needed */
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        padding-top: 60px;
+        padding-top: 0px;
         }
 
         /* Modal Content/Box */
@@ -131,7 +133,7 @@
 
 <body>
     <div id='head-div'>
-        <h2 class='header'>qUNIne - The Universal Medical Database</h2>
+        <h2 class='header'><img src='images/logo.png' class='logo'>qUNIne <span style="opacity:0;">cantseemelol______________________________________</span>The Universal Medical Database</h2>
         <div class="dropdown" style="float:right;">
             <button class="dropbtn">Login</button>
             <div class="dropdown-content">
@@ -146,7 +148,7 @@
     <form class="modal-content animate">
         <div class="imgcontainer">
         <span onclick="document.getElementById('patient-login').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        <img width='188px' height='128px' src="images/patient.png" alt="Avatar" class="avatar">
         </div>
         <h3 style="text-align: center;">Patient Login</h3>
 
@@ -157,7 +159,7 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" id="pP" required>
             
-        <button onclick='patientLogin()'>Login</button>
+        <a class='submit' href='patient.html'>Login</a>
         <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
@@ -175,7 +177,7 @@
         
         <div class="imgcontainer">
         <span onclick="document.getElementById('doctor-login').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        <img width="128px" height="188px" src="images/doctor.png" alt="Avatar" class="avatar">
         </div>
         <h3 style="text-align: center;">Doctor Login</h3>
 
@@ -186,7 +188,7 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
             
-        <button type="submit">Login</button>
+        <a class='submit' href='doctor.html'>Login</a>
         <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
@@ -198,6 +200,48 @@
         </div>
     </form>
     </div>
+    <columnheading>
+        <h1>Our Mission</h1>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </columnheading>
+    
+    <column>
+        <h1 id='grad'>qUNIne is a non-profit organization who wishes to make patient data simpler to access for both doctors
+            and patients. We imagine an age in which every patient can access their data in a simple, yet secure manner; an age in which 
+        every doctor can give their patients important information in a quick and hassle-free manner. </h1>
+
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </column>
+    <columnheading>
+        <h1>Our Process</h1>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </columnheading>
+    
+    <column>
+        <h1 id='grad'>qUNIne is based on a secure database system, encrypted using government-standard RSA encryption. 
+            Hospitals can access their patients' data, but only that which relates to that hospital. 
+            Patients can view every document relevant to them in a simple one-page system, 
+            and every file is retrieved from the hospital database using secure POST requests.
+            Due to this distributed architecture, the qUNIne System is extremely difficult to penetrate, a feat which would
+            require a cyber-criminal to penetrate thousands of hospitals, as opposed to a single server.
+        </h1>
+    
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </column>
+    <columnheading>
+        <h1>qUNIne's Benefits</h1>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </columnheading>
+    
+    <column>
+        <h1 id='grad'>qUNIne can provide superior functionality to similar services such as MyChart, as it allows the patient to 
+            consolidate their medical records in a single location as opposed to multiple separated sub-groups.
+            Its simple design removes the need for extensive and costly tech support departments, as the system is extremely easy
+            to use and explain.
+        </h1>
+    
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </column>
 
     <script>
         //def general funcs
