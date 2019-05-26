@@ -75,9 +75,13 @@
 }
 
 body {
-    background: rgb(205, 255, 246);
+    /*background: rgb(205, 255, 246);*/
+    background-image: linear-gradient(rgb(143, 206, 194),rgb(205, 255, 246));
     font-family: main-font;
     margin: 0px;
+}
+html {
+  background: rgb(205, 255, 246);
 }
 #head-div {
   /*background: #7cc9f5;*/
