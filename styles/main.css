@@ -141,3 +141,10 @@ h2 a {
   text-decoration: none;
   color: black;
 }
+columnheading img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 128px;
+  width: 128px;
+  display: block;
+}
